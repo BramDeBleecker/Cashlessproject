@@ -1,10 +1,10 @@
-﻿<Window x:Class="nmct.ba.cashlessproject.tempui.MainWindow"
+﻿<Window x:Name="HoofdmenuKassa" x:Class="nmct.ba.cashlessproject.tempui.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="600" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="83*"/>
+            <ColumnDefinition Width="76*"/>
             <ColumnDefinition Width="222*"/>
             <ColumnDefinition Width="91*"/>
         </Grid.ColumnDefinitions>
@@ -14,7 +14,7 @@
             <RowDefinition Height="30*"/>
             <RowDefinition Height="449*"/>
         </Grid.RowDefinitions>
-        <Grid HorizontalAlignment="Left" Height="449" Grid.Row="3" VerticalAlignment="Top" Width="610" Grid.ColumnSpan="2">
+        <Grid HorizontalAlignment="Left" Height="449" Grid.Row="3" VerticalAlignment="Top" Width="610" Grid.ColumnSpan="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="200*"/>
                 <ColumnDefinition Width="150*"/>
@@ -26,31 +26,38 @@
                 <RowDefinition Height="350*"/>
                 <RowDefinition Height="40*"/>
             </Grid.RowDefinitions>
-            <CheckBox Content="CheckBox" Grid.Column="3" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="19" Width="176" FontFamily="Ubuntu"/>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="59,5,0,0" VerticalAlignment="Top" FontFamily="Ubuntu"/>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" Grid.Column="1" FontFamily="Ubuntu"/>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Grid.Column="2" FontFamily="Ubuntu"/>
-            <Label Content="Label" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top" Grid.Column="3" FontFamily="Ubuntu"/>
+            <CheckBox Content="afgerekend" Grid.Column="3" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Height="19" Width="154" FontFamily="Ubuntu"/>
+            <Label x:Name="lblHoofdmenukassaArtikel" Content="Artikel" HorizontalAlignment="Left" Margin="59,5,0,0" VerticalAlignment="Top" FontFamily="Ubuntu"/>
+            <Label x:Name="lblHoofdmenukassaHoeveelheid" Content="hoeveelheid" HorizontalAlignment="Left" Margin="36,10,0,0" VerticalAlignment="Top" Grid.Column="1" FontFamily="Ubuntu"/>
+            <Label x:Name="lblHoofdmenukassaBedrag" Content="bedrag" HorizontalAlignment="Left" Margin="39,10,0,0" VerticalAlignment="Top" Grid.Column="2" FontFamily="Ubuntu"/>
+            <Label x:Name="lblHoofdmenukassaAfrekenen" Content="afrkenen" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top" Grid.Column="3" FontFamily="Ubuntu"/>
             <ListBox HorizontalAlignment="Left" Height="346" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="416" Grid.ColumnSpan="3" FontFamily="Ubuntu"/>
+            <Label x:Name="lblHoofdmenukassaTotaal" Content="totaal" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="154"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,13,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="111" Grid.Column="1" TextChanged="TextBox_TextChanged" VerticalContentAlignment="Center"/>
+            <TextBox HorizontalAlignment="Left" Height="23" Margin="10,13,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="111" Grid.Column="2" VerticalContentAlignment="Center"/>
         </Grid>
-        <Grid Grid.Column="2" HorizontalAlignment="Left" Height="449" Grid.Row="3" VerticalAlignment="Top" Width="182">
+        <Grid Grid.Column="3" HorizontalAlignment="Left" Height="449" Grid.Row="3" VerticalAlignment="Top" Width="182">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="18*"/>
+                <ColumnDefinition Width="73*"/>
+            </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
                 <RowDefinition Height="30*"/>
                 <RowDefinition Height="30*"/>
                 <RowDefinition Height="30*"/>
             </Grid.RowDefinitions>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="2" VerticalAlignment="Top" Width="162" Height="149" FontFamily="Ubuntu"/>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="162" Height="150" FontFamily="Ubuntu"/>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="162" Height="150" FontFamily="Ubuntu"/>
+            <Button Content="Annuleer" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="182" Height="149" FontFamily="Ubuntu" Grid.ColumnSpan="2"/>
+            <Button Content="Afrekenen" HorizontalAlignment="Left" Grid.Row="1" VerticalAlignment="Top" Width="182" Height="150" FontFamily="Ubuntu" Grid.ColumnSpan="2"/>
+            <Button Content="Artikel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="182" Height="150" FontFamily="Ubuntu" Grid.ColumnSpan="2"/>
         </Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,2,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" FontFamily="Ubuntu"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="10,2,0,0" Grid.Row="2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" Grid.Column="2" FontFamily="Ubuntu"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="590" Height="49" FontFamily="Ubuntu"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="53,0,0,0" VerticalAlignment="Top" Grid.Row="1" FontFamily="Ubuntu"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="63,2,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="2" Grid.RowSpan="2" FontFamily="Ubuntu"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.Column="2" FontFamily="Ubuntu"/>
-        <Button Content="Button" Grid.Column="2" HorizontalAlignment="Left" Margin="10,39,0,0" VerticalAlignment="Top" Width="162" FontFamily="Ubuntu"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="63,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="110" Grid.Column="2" FontFamily="Ubuntu"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="10,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="156" FontFamily="Ubuntu" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Grid.Row="2" TextWrapping="Wrap" Text="€0" VerticalAlignment="Top" Width="182" Grid.Column="3" FontFamily="Ubuntu" VerticalContentAlignment="Center"/>
+        <Label x:Name="lblHoofdmenukassaTitel" Content="Kassanaam" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="590" Height="49" FontFamily="Ubuntu" FontSize="36"/>
+        <Label x:Name="lblHoofdmenukassaKlantnaam" Content="Klantnaam" HorizontalAlignment="Left" Margin="10,2,0,28" VerticalAlignment="Center" Grid.Row="1" FontFamily="Ubuntu" FontSize="16" FontWeight="Bold" Grid.RowSpan="2" Width="146" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblHoofdmenukassaSaldo" Content="saldo" HorizontalAlignment="Left" Margin="63,2,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="3" Grid.RowSpan="2" FontFamily="Ubuntu" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="lblHoofdmenukassaMedewerker" Content="medewerker" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="3" FontFamily="Ubuntu" Width="182"/>
+        <Button Content="Logout" Grid.Column="3" HorizontalAlignment="Left" Margin="0,48,0,0" VerticalAlignment="Top" Width="182" FontFamily="Ubuntu" Grid.RowSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="0,24,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="182" Grid.Column="3" FontFamily="Ubuntu" VerticalContentAlignment="Center"/>
 
     </Grid>
 </Window>
