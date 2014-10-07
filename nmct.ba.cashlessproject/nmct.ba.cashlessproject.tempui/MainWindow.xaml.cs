@@ -29,5 +29,10 @@ namespace nmct.ba.cashlessproject.tempui
         {
 
         }
+
+        private void LstHoofdmenukassaBestelling_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

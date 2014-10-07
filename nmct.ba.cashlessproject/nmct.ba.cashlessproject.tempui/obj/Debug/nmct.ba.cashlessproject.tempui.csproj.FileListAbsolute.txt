@@ -21,3 +21,9 @@ C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashles
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\LoginITBedrijf.g.cs
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\LoginKassa.g.cs
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\LoginKlant.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\CatergoriemenuKassa.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\CatergoriemenuKassa.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\CategorieArtikelDetailMenu.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\CategorieArtikelDetailMenu.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\HoofdmenuVereniging.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\HoofdmenuVereniging.g.cs
