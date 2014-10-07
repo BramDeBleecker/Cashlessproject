@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace nmct.ba.cashlessproject.tempui
 {
     /// <summary>
-    /// Interaction logic for LoginVereniging.xaml
+    /// Interaction logic for HoofdmenuKassa.xaml
     /// </summary>
-    public partial class LoginVereniging : Window
+    public partial class HoofdmenuKassa : Window
     {
-        public LoginVereniging()
+        public HoofdmenuKassa()
         {
             InitializeComponent();
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }

@@ -53,6 +53,22 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="HoofdmenuKassa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginITBedrijf.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginKassa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginKlant.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="LoginVereniging.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -64,6 +80,18 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HoofdmenuKassa.xaml.cs">
+      <DependentUpon>HoofdmenuKassa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginITBedrijf.xaml.cs">
+      <DependentUpon>LoginITBedrijf.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginKassa.xaml.cs">
+      <DependentUpon>LoginKassa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginKlant.xaml.cs">
+      <DependentUpon>LoginKlant.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginVereniging.xaml.cs">
       <DependentUpon>LoginVereniging.xaml</DependentUpon>

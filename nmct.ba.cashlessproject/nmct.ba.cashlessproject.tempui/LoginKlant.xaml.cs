@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace nmct.ba.cashlessproject.tempui
 {
     /// <summary>
-    /// Interaction logic for LoginVereniging.xaml
+    /// Interaction logic for LoginKlant.xaml
     /// </summary>
-    public partial class LoginVereniging : Window
+    public partial class LoginKlant : Window
     {
-        public LoginVereniging()
+        public LoginKlant()
         {
             InitializeComponent();
         }
