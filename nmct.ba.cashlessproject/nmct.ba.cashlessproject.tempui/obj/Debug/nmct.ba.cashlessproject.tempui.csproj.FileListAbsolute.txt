@@ -27,3 +27,5 @@ C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashles
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\CategorieArtikelDetailMenu.g.cs
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\HoofdmenuVereniging.baml
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\HoofdmenuVereniging.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingKlanten.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingKlanten.g.cs

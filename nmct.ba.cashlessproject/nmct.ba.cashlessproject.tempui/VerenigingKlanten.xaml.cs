@@ -15,14 +15,13 @@ using System.Windows.Shapes;
 namespace nmct.ba.cashlessproject.tempui
 {
     /// <summary>
-    /// Interaction logic for VerenigingHoofdmenu.xaml
+    /// Interaction logic for VerenigingKlanten.xaml
     /// </summary>
-    public partial class VerenigingHoofdmenu : Window
+    public partial class VerenigingKlanten : Window
     {
-        public VerenigingHoofdmenu()
+        public VerenigingKlanten()
         {
             InitializeComponent();
         }
-
     }
 }

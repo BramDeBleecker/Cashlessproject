@@ -56,6 +56,9 @@
     <Compile Include="HoofdmenuVereniging.xaml.cs">
       <DependentUpon>HoofdmenuVereniging.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VerenigingKlanten.xaml.cs">
+      <DependentUpon>VerenigingKlanten.xaml</DependentUpon>
+    </Compile>
     <Page Include="CategorieArtikelDetailMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -118,6 +121,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="HoofdmenuVereniging.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerenigingKlanten.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\App.xaml
-9850736130
+16-1681930633
 
-17-1829229634
+24-246945089
 12-1401562060
-CategorieArtikelDetailMenu.xaml;CatergoriemenuKassa.xaml;HoofdmenuKassa.xaml;LoginITBedrijf.xaml;LoginKassa.xaml;LoginKlant.xaml;LoginVereniging.xaml;MainWindow.xaml;HoofdmenuVereniging.xaml;
+CategorieArtikelDetailMenu.xaml;CatergoriemenuKassa.xaml;HoofdmenuITBedrijf.xaml;HoofdmenuKassa.xaml;LoginITBedrijf.xaml;LoginKassa.xaml;LoginKlant.xaml;LoginVereniging.xaml;MainWindow.xaml;HoofdmenuVereniging.xaml;VerenigingAccount.xaml;verenigingKassa.xaml;VerenigingKassaDetails.xaml;VerenigingKlanten.xaml;VerenigingMedewerkers.xaml;VerenigingProduct.xaml;
 
 False
 
