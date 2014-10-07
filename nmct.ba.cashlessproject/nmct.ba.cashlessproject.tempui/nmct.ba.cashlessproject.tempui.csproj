@@ -53,17 +53,39 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="HoofdmenuITBedrijf.xaml.cs">
+      <DependentUpon>HoofdmenuITBedrijf.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HoofdmenuVereniging.xaml.cs">
       <DependentUpon>HoofdmenuVereniging.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VerenigingAccount.xaml.cs">
+      <DependentUpon>VerenigingAccount.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="verenigingKassa.xaml.cs">
+      <DependentUpon>verenigingKassa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerenigingKassaDetails.xaml.cs">
+      <DependentUpon>VerenigingKassaDetails.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VerenigingKlanten.xaml.cs">
       <DependentUpon>VerenigingKlanten.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerenigingMedewerkers.xaml.cs">
+      <DependentUpon>VerenigingMedewerkers.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VerenigingProduct.xaml.cs">
+      <DependentUpon>VerenigingProduct.xaml</DependentUpon>
     </Compile>
     <Page Include="CategorieArtikelDetailMenu.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CatergoriemenuKassa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HoofdmenuITBedrijf.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -124,7 +146,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="VerenigingAccount.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="verenigingKassa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerenigingKassaDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="VerenigingKlanten.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerenigingMedewerkers.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VerenigingProduct.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

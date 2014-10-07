@@ -29,3 +29,15 @@ C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashles
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\HoofdmenuVereniging.g.cs
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingKlanten.baml
 C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingKlanten.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\HoofdmenuITBedrijf.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingAccount.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\verenigingKassa.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingKassaDetails.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingMedewerkers.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingProduct.baml
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\HoofdmenuITBedrijf.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingAccount.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\verenigingKassa.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingKassaDetails.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingMedewerkers.g.cs
+C:\Users\Bram\Documents\GitHub\ProjectBA\nmct.ba.cashlessproject\nmct.ba.cashlessproject.tempui\obj\Debug\VerenigingProduct.g.cs
