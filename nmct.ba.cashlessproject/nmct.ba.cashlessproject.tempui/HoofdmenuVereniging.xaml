@@ -21,17 +21,17 @@
                 <ColumnDefinition Width="1*"/>
                 <ColumnDefinition Width="1*"/>
             </Grid.ColumnDefinitions>
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34"/>
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="1"/>
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="2"/>
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="3"/>
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="4"/>
-            <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="5"/>
+            <Button Content="account" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34"/>
+            <Button Content="Product" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="1"/>
+            <Button Content="Medewerkers" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="2"/>
+            <Button Content="Register" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="3"/>
+            <Button Content="Klanten" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="4"/>
+            <Button Content="Verkoop" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Height="34" Grid.Column="5"/>
         </Grid>
-        <Label x:Name="lblHoofdmenukassaMedewerker" Content="medewerker" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Ubuntu" Width="182" Grid.ColumnSpan="2" Margin="607,0,0,0"/>
+        <Label x:Name="lblHoofdmenukassaMedewerker" Content="Medewerker" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Ubuntu" Width="182" Grid.ColumnSpan="2" Margin="607,0,0,0"/>
         <Button x:Name="BtnHoofdmenukassaLogout" Content="Logout" HorizontalAlignment="Left" Margin="607,48,0,0" VerticalAlignment="Top" Width="182" FontFamily="Ubuntu" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
         <TextBox x:Name="TxtHoofdmenukassaMedewerker" HorizontalAlignment="Left" Height="23" Margin="607,24,0,0" TextWrapping="Wrap" Text="naam" VerticalAlignment="Top" Width="182" FontFamily="Ubuntu" VerticalContentAlignment="Center" Grid.ColumnSpan="2"/>
-        <Label x:Name="lblHoofdmenukassaTitel" Content="Kassanaam" HorizontalAlignment="Left" Margin="10.5,10,0,0" VerticalAlignment="Top" Width="590" Height="49" FontFamily="Ubuntu" FontSize="36" Grid.RowSpan="2"/>
+        <Label x:Name="lblHoofdmenukassaTitel" Content="Management vereniging" HorizontalAlignment="Left" Margin="10.5,10,0,0" VerticalAlignment="Top" Width="590" Height="49" FontFamily="Ubuntu" FontSize="36" Grid.RowSpan="2"/>
 
     </Grid>
 </Window>
