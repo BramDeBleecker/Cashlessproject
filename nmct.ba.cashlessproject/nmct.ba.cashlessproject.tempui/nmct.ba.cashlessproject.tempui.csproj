@@ -59,6 +59,12 @@
     <Compile Include="HoofdmenuVereniging.xaml.cs">
       <DependentUpon>HoofdmenuVereniging.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ITBedrijfKassa.xaml.cs">
+      <DependentUpon>ITBedrijfKassa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ITBedrijfVerenigingen.xaml.cs">
+      <DependentUpon>ITBedrijfVerenigingen.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VerenigingAccount.xaml.cs">
       <DependentUpon>VerenigingAccount.xaml</DependentUpon>
     </Compile>
@@ -90,6 +96,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="HoofdmenuKassa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ITBedrijfKassa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ITBedrijfVerenigingen.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

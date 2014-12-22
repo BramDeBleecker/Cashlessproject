@@ -1,0 +1,63 @@
+﻿<UserControl x:Class="nmct.ba.cashlessproject.ui.View.HoofdmenuKassa"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="600" d:DesignWidth="800" Background="Ivory">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150*"/>
+            <ColumnDefinition Width="450*"/>
+            <ColumnDefinition Width="175*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="75*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="450*"/>
+        </Grid.RowDefinitions>
+        <Grid HorizontalAlignment="Left" Height="450" Grid.Row="3" VerticalAlignment="Top" Width="610" Grid.ColumnSpan="4">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="400*"/>
+                <ColumnDefinition Width="150*"/>
+                <ColumnDefinition Width="150*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="350*"/>
+                <RowDefinition Height="40*"/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lblHoofdmenukassaArtikel" Content="Artikel" Style="{StaticResource LabelHoofdmenukassaArtikel}"/>
+            <Label x:Name="lblHoofdmenukassaHoeveelheid" Content="hoeveelheid" Grid.Column="1" Width="110" Style="{StaticResource LabelHoofdmenukassaArtikel}"/>
+            <Label x:Name="lblHoofdmenukassaBedrag" Content="bedrag" Grid.Column="2" Width="110" Style="{StaticResource LabelHoofdmenukassaArtikel}"/>
+            <ListBox x:Name="LstHoofdmenukassaBestelling" Style="{StaticResource ListBoxHoofdmenukassaBestelling}" Width="600"/>
+            <Label x:Name="lblHoofdmenukassaTotaal" Content="totaal" Grid.Row="2" Style="{StaticResource LabelHoofdmenukassaTotaal}"/>
+            <TextBox x:Name="TxtHoofdmenukassaTotaalhoeveelheid"  Style="{StaticResource TextBoxHoofdmenukassaTotaalhoeveelheid}" Margin="229,5,0,0"/>
+            <TextBox x:Name="TxtHoofdmenukassaTotaalbedrag" Grid.Column="1" Style="{StaticResource TextBoxHoofdmenukassaTotaalhoeveelheid}" Margin="10.429,8,0,0"/>
+            <Button Content="verwijder selectie" FontWeight="Bold" Grid.Column="2" HorizontalAlignment="Left" Margin="10,10,10,10" Grid.Row="2" VerticalAlignment="Top" Width="111"/>
+        </Grid>
+        <Grid Grid.Column="3" HorizontalAlignment="Left" Height="450" Grid.Row="3" VerticalAlignment="Top" Width="182">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="30*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="BtnHoofdmenukassaAnnuleer" Content="Annuleer" Grid.Row="2" Style="{StaticResource ButtonHoofdmenukassaNavigatie}"/>
+            <Button x:Name="BtnHoofdmenukassaAfrekenen" Content="Afrekenen" Grid.Row="1" Style="{StaticResource ButtonHoofdmenukassaNavigatie}"/>
+            <Button x:Name="BtnHoofdmenukassaArtikel" Content="Artikel" Grid.Row="0" Style="{StaticResource ButtonHoofdmenukassaNavigatie}"  Command="{Binding DataContext.ArtikelCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
+        </Grid>
+        <TextBox x:Name="TxtHoofdmenukassaKlantnaam" Text="naam" Style="{StaticResource TextBoxHoofdmenukassaKlantnaam}"/>
+        <TextBox x:Name="TxtHoofdmenukassaSaldo" Text="€0" Grid.Column="3" Width="180" Style="{StaticResource TextBoxHoofdmenukassaKlantnaam}" Margin="0"/>
+        <Label x:Name="lblHoofdmenukassaTitel" Content="Kassanaam" Style="{StaticResource Titel}" Grid.Column="0" Grid.ColumnSpan="2"/>
+        <Label x:Name="lblHoofdmenukassaKlantnaam" Content="Klantnaam" Grid.Column="0" Style="{StaticResource LabelHoofdmenukassaKlantnaam}"/>
+        <Label x:Name="lblHoofdmenukassaSaldo" Content="saldo" Margin="0,0,0,0" Grid.Row="1" Grid.Column="2" Style="{StaticResource LabelHoofdmenukassaKlantnaam}"/>
+        <Label x:Name="lblHoofdmenukassaMedewerker" Content="medewerker" Grid.Column="3" Style="{StaticResource LabelMedewerkerlogged}"/>
+        <Button x:Name="BtnHoofdmenukassaLogout" Content="Logout" Grid.Column="3"  Style="{StaticResource ButtonLogout}" Command="{Binding DataContext.LogoutKassaCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
+        <TextBox x:Name="TxtHoofdmenukassaMedewerker" Grid.Column="3"  Style="{StaticResource TextBoxMedewerkerlogged}"/>
+
+    </Grid>
+</UserControl>

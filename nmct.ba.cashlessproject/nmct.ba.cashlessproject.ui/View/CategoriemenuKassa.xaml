@@ -1,0 +1,27 @@
+﻿<UserControl x:Class="nmct.ba.cashlessproject.ui.View.CategoriemenuKassa"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="315" d:DesignWidth="315" Background="Ivory">
+    <Grid>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="215*"/>
+                <RowDefinition Height="20*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200*"/>
+                <ColumnDefinition Width="100*"/>
+            </Grid.ColumnDefinitions>
+            <ListBox x:Name="LstCategoriemenuArtikel" Style="{StaticResource ListBoxCategoriemenuArtikel}"/>
+            <Button x:Name="BtnategoriemenuAnnuleer" Grid.Column="1" Style="{StaticResource ButtonategoriemenuAnnuleer}" Command="{Binding DataContext.GaNaarKassaCommand, RelativeSource={RelativeSource AncestorType={x:Type Window}}}" CommandParameter="{Binding}"/>
+            <Label x:Name="lblCategoriemenuArtikel" Content="Artikel"  Style="{StaticResource LabelCategoriemenu}"/>
+            <Label x:Name="lblCategoriemenuCategorie" Content="categorie" Grid.Column="1" Style="{StaticResource LabelCategoriemenu}"/>
+            <ListBox x:Name="LstCategoriemenuCategorie" Style="{StaticResource ListBoxCategoriemenuCategorie}"/>
+
+        </Grid>
+    </Grid>
+</UserControl>

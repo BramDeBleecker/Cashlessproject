@@ -9,11 +9,11 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="55*"/>
-            <RowDefinition Height="37*"/>
-            <RowDefinition Height="114*"/>
-            <RowDefinition Height="63*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="115*"/>
+            <RowDefinition Height="65*"/>
         </Grid.RowDefinitions>
-        <Label x:Name="LblCategorieArtikelDetailMenuTitel" Content="Artikel Detail" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="35" Width="272" FontSize="22"/>
+        <Label x:Name="LblCategorieArtikelDetailMenuTitel" Content="Artikel Detail" Grid.ColumnSpan="2" Style="{StaticResource TitelKlein}"/>
         <Grid HorizontalAlignment="Left" Height="94" Margin="24,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="94">
             <Grid.RowDefinitions>
                 <RowDefinition Height="33*"/>
@@ -25,22 +25,22 @@
                 <ColumnDefinition Width="33*"/>
                 <ColumnDefinition Width="33*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btnCategorieArtikelDetailMenu1" Content="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Padding="0" Margin="0,0,0,1" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu2" Content="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Grid.Column="1" Padding="0" Margin="0,0,1,1" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu3" Content="3" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Grid.Column="1" Margin="31,0,1,1" Padding="0" Grid.ColumnSpan="2" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu6" Content="6" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Grid.Column="1" Margin="31,30,1,3" Grid.RowSpan="2" Padding="0" Grid.ColumnSpan="2" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu5" Content="5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="31" Height="30" Grid.Column="1" Margin="0,0,1,3" Grid.RowSpan="2" Padding="0" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu4" Content="4" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Margin="0,30,0,3" Grid.RowSpan="2" Padding="0" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu7" Content="7" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Grid.Row="1" Margin="0,29,0,4" Grid.RowSpan="2" Padding="0" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu8" Content="8" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Grid.Row="1" Grid.Column="1" Margin="0,29,1,4" Grid.RowSpan="2" Padding="0" FontSize="22"/>
-            <Button x:Name="btnCategorieArtikelDetailMenu9" Content="9" HorizontalAlignment="Center" VerticalAlignment="Center" Width="31" Height="30" Grid.Row="1" Grid.Column="1" Margin="31,29,1,4" Grid.RowSpan="2" Padding="0" Grid.ColumnSpan="2" FontSize="22"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu1" Content="1" Grid.Column="0" Grid.Row="0" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu2" Content="2" Grid.Column="1" Grid.Row="0" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu3" Content="3" Grid.Column="2" Grid.Row="0" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu6" Content="6" Grid.Column="2" Grid.Row="1" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu5" Content="5" Grid.Column="1" Grid.Row="1" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu4" Content="4" Grid.Column="0" Grid.Row="1" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu7" Content="7" Grid.Column="0" Grid.Row="2" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu8" Content="8" Grid.Column="1" Grid.Row="2" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
+            <Button x:Name="btnCategorieArtikelDetailMenu9" Content="9" Grid.Column="2" Grid.Row="2" Style="{StaticResource ButtonCategorieArtikelDetailMenuNummer}"/>
         </Grid>
-        <TextBox x:Name="TxtCategorieArtikelDetailMenuHoeveelheid" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,47,0,0" Grid.Row="2" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="126" FontSize="16"/>
-        <Label x:Name="LblCategorieArtikelDetailMenuHoeveelheid" Content="Hoeveelheid" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="126" FontSize="16"/>
-        <Button x:Name="btnCategorieArtikelDetailMenuReset" Content="reset" Grid.Column="1" HorizontalAlignment="Left" Margin="10,75,0,0" Grid.Row="2" VerticalAlignment="Top" Width="126" Height="29" FontSize="18"/>
-        <Button x:Name="btnCategorieArtikelDetailMenuAnnuleer" Content="annuleer" Grid.Column="1" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="126" Height="43" FontSize="18"/>
-        <Button x:Name="btnCategorieArtikelDetailMenuToevoegen" Content="toevoegen" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="3" VerticalAlignment="Top" Width="126" Height="43" FontSize="18"/>
-        <TextBox x:Name="TxtCategorieArtikelDetailMenuArtikelnaam" HorizontalAlignment="Left" Height="37" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Artikelnaam" VerticalAlignment="Top" Width="272" Grid.ColumnSpan="2" FontSize="20"/>
+        <TextBox x:Name="TxtCategorieArtikelDetailMenuHoeveelheid" Grid.Column="1" Grid.Row="2" Text="0" Style="{StaticResource TextBoxCategorieArtikelDetailMenuHoeveelheid}"/>
+        <Label x:Name="LblCategorieArtikelDetailMenuHoeveelheid" Content="Hoeveelheid" Grid.Column="1" Grid.Row="2" Style="{StaticResource LabelCategorieArtikelDetailMenuHoeveelheid}"/>
+        <Button x:Name="btnCategorieArtikelDetailMenuReset" Grid.Column="1" Grid.Row="2" Style="{StaticResource ButtonCategorieArtikelDetailMenuReset}"/>
+        <Button x:Name="btnCategorieArtikelDetailMenuAnnuleer" Content="Annuleer" Grid.Column="1" Style="{StaticResource buttonCategorieArtikelDetailMenuNavigatie}" />
+        <Button x:Name="btnCategorieArtikelDetailMenuToevoegen" Content="Toevoegen" Grid.Column="0" Style="{StaticResource buttonCategorieArtikelDetailMenuNavigatie}"/>
+        <TextBox x:Name="TxtCategorieArtikelDetailMenuArtikelnaam" Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource TextBoxCategorieArtikelDetailMenuArtikelnaam}"/>
 
     </Grid>
 </Window>

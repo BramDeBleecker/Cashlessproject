@@ -1,0 +1,315 @@
+﻿<Application x:Class="nmct.ba.cashlessproject.ui.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="View\MainWindow.xaml">
+    <Application.Resources>
+        <!--grid-->
+        <Style x:Key="GridNavigatie" TargetType="{x:Type Grid}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="780"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="10,10,0,0"/>
+        </Style>
+        <!--label-->
+        <Style x:Key="Titel" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="550"/>
+            <Setter Property="Height" Value="55"/>
+            <Setter Property="Margin" Value="10,10,0,0"/>
+            <Setter Property="FontSize" Value="36"/>
+        </Style>
+        <Style x:Key="TitelKlein" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="275"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="10,10,0,0"/>
+            <Setter Property="FontSize" Value="22"/>
+        </Style>
+
+        <Style x:Key="LabelMedewerkerlogged" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style x:Key="LabelsHoofdmenuVereniging" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="110"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="0"></Setter>
+        </Style>
+        <Style x:Key="LabelCategorieArtikelDetailMenuHoeveelheid" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="10,10,0,0"/>
+        </Style>
+        <Style x:Key="LabelCategoriemenu" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="80  "/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+        </Style>
+        <Style x:Key="LabelHoofdmenukassaArtikel" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="155"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="10,0,10,0"/>
+        </Style>
+        <Style x:Key="LabelHoofdmenukassaTotaal" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="130"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+        </Style>
+        <Style x:Key="LabelHoofdmenukassaKlantnaam" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="140"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="Padding" Value="0,0,0,0"/>
+        </Style>
+
+        <Style x:Key="LabelLogin" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="270"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="LabelLoginTitel" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="5,5,5,5"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Width" Value="270"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <!--textbox-->
+        <Style x:Key="TextBoxMedewerkerlogged" TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="0,0,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Text" Value="Naam"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="TextBoxCategorieArtikelDetailMenuArtikelnaam" TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="275"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Text" Value="ArtikelNaam"/>
+            <Setter Property="VerticalAlignment" Value="top"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="TextBoxCategorieArtikelDetailMenuHoeveelheid" TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="10,50,0,0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="VerticalAlignment" Value="top"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+        </Style>
+        <Style x:Key="TextBoxHoofdmenukassaTotaalhoeveelheid" TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="110"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="VerticalAlignment" Value="top"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Grid.Row" Value="2"/>
+            <Setter Property="Text" Value="0"/>
+        </Style>
+        <Style x:Key="TextBoxHoofdmenukassaKlantnaam" TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="140"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="10,0,0,0"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="VerticalAlignment" Value="top"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Grid.Row" Value="2"/>
+        </Style>
+        <Style x:Key="TextBoxUsernameITBedrijf" TargetType="{x:Type TextBox}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="270"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+        </Style>
+        <!--button-->
+        <Style x:Key="ButtonLogout" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="0,50,0,0"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="0,50,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Content" Value="Logout"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style x:Key="ButtonNavigatieVereniging" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        <Style x:Key="ButtonCategorieArtikelDetailMenuNummer" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="32"/>
+            <Setter Property="Height" Value="32"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="22"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderBrush" Value="{x:Null}"/>
+        </Style>
+        <Style x:Key="ButtonCategorieArtikelDetailMenuReset" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="10,75,0,0"/>
+            <Setter Property="Content" Value="Reset"/>
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="18"/>
+        </Style>
+        <Style x:Key="buttonCategorieArtikelDetailMenuNavigatie" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Margin" Value="10,10,0,0"/>
+            <Setter Property="Width" Value="125"/>
+            <Setter Property="Height" Value="45"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Grid.Row" Value="3"/>
+        </Style>
+        <Style x:Key="ButtonategoriemenuAnnuleer" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Content" Value="Annuleer"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="20"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Grid.Row" Value="2"/>
+        </Style>
+        <Style x:Key="ButtonHoofdmenukassaNavigatie" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Grid.Row" Value="2"/>
+            <Setter Property="Content" Value="Annuleer"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="150"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
+        <Style x:Key="ButtonLogin" TargetType="{x:Type Button}">
+            <Setter Property="HorizontalAlignment" Value="left"/>
+            <Setter Property="Content" Value="Inloggen"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="270"/>
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+        </Style>
+        <!--combobox-->
+        <Style x:Key="ComboBoxenHoofdMenuKassa" TargetType="{x:Type ComboBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="160"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Grid.Row" Value="2"/>
+        </Style>
+        <!-- Listbox -->
+        <Style x:Key="ListBoxCategoriemenuArtikel" TargetType="{x:Type ListBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="180"/>
+            <Setter Property="Height" Value="235"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Grid.RowSpan" Value="2"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="10,10,0,5"/>
+        </Style>
+        <Style x:Key="ListBoxCategoriemenuCategorie" TargetType="{x:Type ListBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="Height" Value="235"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Grid.Column" Value="1"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+        </Style>
+        <Style x:Key="ListBoxHoofdmenukassaBestelling" TargetType="{x:Type ListBox}">
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Width" Value="415"/>
+            <Setter Property="Height" Value="345"/>
+            <Setter Property="Grid.Row" Value="1"/>
+            <Setter Property="Grid.Column" Value="0"/>
+            <Setter Property="Grid.ColumnSpan" Value="3"/>
+            <Setter Property="FontFamily" Value="Ubuntu"/>
+            <Setter Property="FontSize" Value="12"/>
+            <Setter Property="Margin" Value="10,10,0,0"/>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -24,9 +24,5 @@ namespace nmct.ba.cashlessproject.tempui
             InitializeComponent();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
     }
 }
